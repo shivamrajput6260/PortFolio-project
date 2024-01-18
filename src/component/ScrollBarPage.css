@@ -1,0 +1,10 @@
+.scroll-btn {
+  font-size: 50px;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  color: white;
+
+  /* color: black; */
+  /* background-color: white; */
+}

@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main-section {
+  background-color: rgb(5, 5, 5);
+  font-family: "poppins", sans-serif;
+}
+
+.Blog {
+  color: white;
+  text-align: center;
+  width: 516px;
+  margin: auto;
+}
+
+.myh3 {
+  font-size: 47px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.para11 {
+  line-height: 28px;
+  /* font-weight: 300; */
+  font-size: 18px;
+  color: rgba(198, 205, 216, 0.75);
+}
+.container {
+  padding-top: 5%;
+  padding-left: 14%;
+  padding-right: 14%;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 60px;
+}
+.myblog {
+  background-color: rgb(15, 15, 15);
+  position: relative;
+  height: 600px;
+  width: 95%;
+  border-radius: 10px;
+
+  text-align: center;
+  transition: all ease-in-out;
+  overflow: hidden;
+}
+
+.blog-img1 {
+  background-image: url("https://trydo.rainbowit.net/assets/images/blog/blog-01.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blog-img2 {
+  background-image: url("https://trydo.rainbowit.net/assets/images/blog/blog-02.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blog-img3 {
+  background-image: url("https://trydo.rainbowit.net/assets/images/blog/blog-03.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.big-show {
+  line-height: 28px;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgba(198, 205, 216, 0.75);
+  height: 72px;
+  width: 308px;
+}
+
+.inner-div {
+  /* height: 192px; */
+  left: 10%;
+  text-align: center;
+  /* width: 307px; */
+  text-align: center;
+  position: absolute;
+  top: 80%;
+}
+
+.inner-div button {
+  margin-top: 40px;
+}
+.btn-view {
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  height: 40px;
+  width: 140px;
+}
+
+.inner-div > .para2 {
+  color: white;
+}
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.child::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: linear-gradient(
+    to top,
+    rgba(249, 0, 77, 0.012),
+    rgba(249, 0, 77, 0.0745)
+  );
+}
+.my-blog:hover .blog-img1 {
+  transform: scale(1.2);
+}
+.myblog:hover .child::before {
+  transition: all 0.6s;
+  display: block;
+}
+.myblog:hover .inner-div {
+  transform: translateY(-80px);
+}
+
+@media screen and (max-width: 1600px) {
+  .myblog {
+    width: 100%;
+    height: 400px;
+  }
+  .inner-div {
+    margin-left: 14px;
+    top: 68%;
+  }
+
+  .big-show {
+    width: 238px;
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .myblog {
+    width: 100%;
+    height: 282px;
+  }
+  .big-show {
+    width: 183px;
+    font-size: 16px;
+  }
+  .inner-div {
+    margin-left: 14px;
+    top: 58%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 51px;
+  }
+  .myblog {
+    width: 88%;
+    height: 370px;
+  }
+  .inner-div {
+    width: 200px;
+    top: 65%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .myblog {
+    width: 70%;
+    height: 478px;
+
+    left: 70px;
+  }
+  .inner-div {
+    width: 271px;
+    top: 75%;
+    left: 13px;
+  }
+  .big-show {
+    width: 274px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .myblog {
+    width: 68%;
+    left: 60px;
+    right: 50px;
+    height: 375px;
+  }
+  .inner-div {
+    left: 12px;
+    top: 65%;
+  }
+  .Blog {
+    width: 476px;
+  }
+  .big-show{
+    width: 233px;
+  }
+  .inner-div > .para2 {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .Blog > .myh3 {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+  .Blog {
+    width: 350px;
+  }
+  .myblog {
+    width: 100%;
+    left: 2px;
+    height: 378px;
+    padding-left: 8px;
+  }
+  .inner-div {
+    width: 221px;
+    top: 66%;
+    left: 60px;
+  }
+  .big-show {
+    width: 230px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .big-show {
+    width: 189px;
+    font-size: 20px;
+  }
+  .inner-div {
+    width: 191px;
+    top: 50%;
+    left: 75px;
+  }
+  .myblog {
+    height: 250px;
+  }
+  .Blog {
+    width: 278px;
+  }
+    .inner-div > .para2 {
+      width: 176px;
+    }
+  
+}

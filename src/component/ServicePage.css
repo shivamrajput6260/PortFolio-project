@@ -1,0 +1,122 @@
+.main-section {
+  background-color: rgb(5, 5, 5);
+}
+
+.awesome {
+  color: white;
+  text-align: center;
+  width: 516px;
+  margin: auto;
+}
+
+.myh1 {
+  font-size: 47px;
+}
+
+.para {
+  font-size: 17px;
+}
+.service-container {
+  width: 70%;
+  margin: auto;
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fill, 340px);
+ justify-content: space-evenly;
+}
+.card {
+  background-color: rgb(15, 15, 15);
+  /* width: 90%; */
+  border-radius: 10px;
+  padding: 8%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: all 0.6s ease-in-out;
+  background-color: rgb(212, 18, 83);
+}
+
+.card:hover .para {
+  color: white;
+}
+
+.card:hover .icon__size {
+  color: white;
+}
+.icon-color {
+  color: rgb(233, 14, 14);
+  height: 10px;
+}
+.business {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.para {
+  line-height: 28px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(198, 205, 216, 0.75);
+}
+.icon__size {
+  color: rgb(192, 7, 62);
+  font-size: 50px;
+}
+@media screen and (max-width: 1600px) {
+  .service-container {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 873px) {
+  .service-container {
+    width: 100%;
+    margin: auto;
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    /* grid-template-columns: repeat(auto-fill, 340px); */
+    /* padding-left: 15%;
+    padding-right: 15%; */
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .service-container {
+    width: 85%;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    grid-template-columns: 1fr 1fr;
+  }
+  .myh1 {
+    font-size: 37px;
+  }
+  .para {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .service-container {
+    width: 75%;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .awesome {
+    width: 300px;
+  }
+}
